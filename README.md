@@ -15,7 +15,7 @@ Our ICPC team is currently managed by the following people:
 	- Kelvin ([email](mailto:kelvinwpeng@gmail.com))
 	- Will Mayes ([email](mailto:wtm4bp@virginia.edu))
 
-##Folder Structure
+## Folder Structure
 
 Each folder in this repository has the following folder structure: \[Practice Number\]-\[year of original contest\]_\[Name of contest\]. For example, the folder "01-2019_RockyMountainRegional" is from our first practice of the year (01) and the contest was the Rocky Mountain Regional problems from 2019.
 
