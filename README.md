@@ -29,6 +29,7 @@ We only accept pull requests from students at UVa, submitting work done through 
 
 - Create a folder under the proper contest / practice. Your folder must include the following:
 	- A text file called *information.txt" which contains:
+		- Name and email of the submitter (so peers can contact you with questions). *Optional, but encouraged.*
 		- A link to the Kattis submission page for the problem (if applicable)
 		- A short summary (5-6 sentences) describing the overall approach to your solution.
 	- The code for that problem.
