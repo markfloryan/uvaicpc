@@ -32,7 +32,7 @@ void recurse(int x, int y, int map[6][6][3], int valf, int vala, int dir, bool* 
 	}
 }
 
-void problemB(){
+int main(){
 	bool layout[6][6];
 	int x, y;
 

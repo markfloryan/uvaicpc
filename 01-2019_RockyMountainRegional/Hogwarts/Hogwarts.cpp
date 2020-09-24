@@ -29,7 +29,7 @@ int hogwarts(int** original, int** now, bool** visited, int onum, int nnum, int 
 
 
 // ignore the memory leaks; this is for a programming competition, so it doesn't matter.
-void problemC(){
+int main(){
 	int size;
 	std::cin >> size;
 
