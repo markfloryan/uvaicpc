@@ -1,0 +1,6 @@
+Ray Bai (ryb4qy@virginia.edu)
+https://open.kattis.com/problems/typo
+
+Note that substring methods are O(n) and not O(1) so we're not allowed to simply check every possible typo of a particular word directly. For a particular word, one can think of "rolling" a pointer from the left to right where the pointer represents the character to be removed for a typo to exist. I used a Rolling Hash (also known as a Polynomial Hash) to represent the strings. With this hashing technique, you essentially represent each string as a polynomial of some small prime number mod some large prime number. This allows you to check every possible typo in O(total length of strings) which runs in time. Please note that you have to handle for collisions too. In this code, I just checked the typo string explicitly with the actual string if their hashes match. This is fine since collisions aren't super often.
+
+Rolling Hash tutorial: https://codeforces.com/blog/entry/60445
