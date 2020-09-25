@@ -1,0 +1,7 @@
+Eli Kin
+emk2xnt@virginia.edu
+9/23/20
+
+https://open.kattis.com/contests/nve68u/problems/pieceofcake2
+
+In this problem, you are asked to find the volume of the largest piece of a square cake of height 4 after being cut once both horizontally and vertically. You are given the n (side-length of the cake), v (distance between the top left corner and the vertical cut), and h (distance between the top left corner and the horizontal cut). To find the area of top of the largest piece, multiply whichever the greater value of h and (n - h) is by whichever whichever the greater value of v and (n - v). Finally, multiply this area value by the cake's height (4), to find the volume of the largest piece.
