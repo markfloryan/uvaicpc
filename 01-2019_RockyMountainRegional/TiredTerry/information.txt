@@ -1,0 +1,9 @@
+A person, Terry, has a sleep schedule that repeats itself. He is tired at any moment if he has slept less than a given amount in any interval of time of a given length.
+
+This program starts by calculating how much sleep he has had at the beginning of the cycle by counting the number of tired seconds at the end of the cycle and up to the first element of the new cycle. Then, it shifts the interval to check one element at a time and calculates the amount of sleep Terry got during the new interval.
+
+You only need to check two elements each time the interval shifts: the element entering the interval and the element leaving the interval.
+
+After calculating the amount of sleep time in each interval, you check if the value is less than the threshold, and if it is, the counter for total tired time is incremented. This counter is the return value.
+
+The algorithm runs in O(n) time, since it only makes two new calculations for each additional second in the cycle. A brute force solution where you rechecked each second for every new interval would run in O(n^2) time.
