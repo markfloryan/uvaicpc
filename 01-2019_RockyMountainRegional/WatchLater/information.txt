@@ -1,0 +1,6 @@
+Ray Bai (ryb4qy@virginia.edu)
+https://open.kattis.com/problems/watchlater
+
+The most important thing to notice is the small bound on K. Because K is at most 20, we can think about some bitmask solution. Make the following observation: the answer is the minimal # of removals needed such that on one removal you clear a subarray consisting of a single character and the two halves remaining stick together. If we precompute the set of video types that exist between two blocks of the same video type, we can easily check if a set of blocks have already been deleted or not in the current mask state (just check if mask|between = mask where "|" is bitwise or). With N^2 precomp, this solution runs in O(N*2^K+K*2^K). The generous 6 second time limit does help.
+
+Bitmask DP tutorial: https://www.hackerearth.com/practice/algorithms/dynamic-programming/bit-masking/tutorial/

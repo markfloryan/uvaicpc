@@ -1,0 +1,4 @@
+Ray Bai (ryb4qy@virginia.edu)
+https://open.kattis.com/problems/lostlineup
+
+To solve this, notice that each person in the lineup will gradually be located farther away from Jimmy (the first in line). Simply sort the indices by the value given (# of people in between a person and Jimmy) and print those indices out in order.

@@ -1,0 +1,4 @@
+Ray Bai (ryb4qy@virginia.edu)
+https://open.kattis.com/problems/molecules
+
+The important thing is to notice that for each dimension, you have N unknowns. This means that if you can create N different linear relationships, you can row reduce to explicitly find all N locations. This works because the problem guarantees that a valid configuration will exist. My code uses Gaussian elimination to tow reduce which is O(n^3) complexity.

@@ -1,0 +1,12 @@
+Name: Kevin Ivey
+Email: ki4km@virginia.edu
+Problem: https://open.kattis.com/contests/nve68u/problems/integerdivision
+
+To check the number of pairs that have the same result when divided by the given quotient, 
+but aren't at the same index in the given list, we just have to determine the total number 
+of items for each result. 
+
+Once we have this, we can count the number of unique pairs for each result and sum them up.
+To count the number of unique pairs for n items, use the formula:
+	(n * (n - 1)) / 2 
+
