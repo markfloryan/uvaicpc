@@ -15,4 +15,4 @@ and
 AAAXXXXXXEEEIII
 ```
 
-where X is an empty bin. Then these are both valid versions of the ordering `AEI`, and it is inefficient to calculate which is optimal naively. To solve this, I used a recursive function (on the set of used labels and current index), which computes the cost of filling out the rest of the bins, assuming the first `idx` bins are already set and the used labels cannot be used anymore.
+where X is an empty bin. Then these are both valid versions of the ordering `AEI`, and it is inefficient to calculate which is optimal naively. To solve this, I used a recursive function (on the set of used labels and current index), which computes the cost of filling out the rest of the bins, assuming the first `idx` bins are already set and the used labels cannot be used anymore. Since this has theoretically exponential time, I optimized this by memoizing on the index and set of used labels (represented as a bit map).
