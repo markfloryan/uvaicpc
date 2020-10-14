@@ -1,0 +1,14 @@
+Evan Rose (esr6vqa@virginia.edu)
+https://open.kattis.com/problems/dragonball1
+
+This problem amounts to finding the shortest path through an undirected 
+graph that visits each vertex in a given set of "key" vertices, starting 
+from a given vertex. To solve this problem, first observe that any optimal 
+solution must consist of optimal solutions to subproblems (optimal 
+substructure). Namely, the shortest path through all key vertices 
+necessarily consists of shortest paths between pairs of those key vertices. 
+Then a solution can be constructed by computing the pairwise distances 
+between key vertices (use Dijkstra's algorithm), and then considering every 
+possible permutation of vertices to visit in order. Since there are at most 
+7 key vertices we must visit, the number of paths to check is negligible
+(7! = 5040).
