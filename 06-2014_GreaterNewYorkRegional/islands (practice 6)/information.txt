@@ -1,0 +1,9 @@
+Evan Rose (esr6vqa@virginia.edu)
+https://open.kattis.com/problems/islands
+
+This problem asks us to find the number of subarrays in a given array such 
+that each element in the subarray is strictly greater than the elements 
+immediately before and after the subarray. Since the size of the array is 
+fixed (12), we can simply count all possible (i, j) pairs, i < j, such that 
+the property is met for A[i..j]. This is implemented here as a double for 
+loop.

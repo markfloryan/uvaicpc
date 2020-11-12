@@ -1,0 +1,11 @@
+Evan Rose (esr6vqa@virginia.edu)
+https://open.kattis.com/problems/mancala
+
+This problem asks us to find a winning Tchoukaillon board of a given 
+number of counters. The problem statement tells us that the solution for 
+each count is unique, and so it must be the case that the winning board 
+for n counters can produce the winning board for n-1 counters after a 
+single move. This allows us to describe a recursive relationship between 
+the winning boards of different counts, and hence we can use an 
+iterative algorithm to precompute the solutions up to the maximum count 
+requested in the problem statement.

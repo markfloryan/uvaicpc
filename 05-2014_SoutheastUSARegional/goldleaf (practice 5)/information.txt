@@ -1,0 +1,11 @@
+Evan Rose (esr6vqa@virginia.edu)
+https://open.kattis.com/problems/goldleaf
+
+This problem can be solved using a brute force algorithm without too 
+much trouble. We simply consider every possible fold, adding to a list 
+of possible solutions as we find folds that can produce the given gold 
+leaf. At the end, we sort that list based on the priority given in the 
+problem statement, and display the best one. One interesting observation 
+is that we don't need to write code to evaulate each possible fold type, 
+but instead can apply transformations to the gold leaf itself to reduce
+the number of types of folds to check.

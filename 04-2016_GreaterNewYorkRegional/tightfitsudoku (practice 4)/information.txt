@@ -1,0 +1,12 @@
+Evan Rose (esr6vqa@virginia.edu)
+https://open.kattis.com/problems/tightfitsudoku
+
+This problem can be solved using a branch and bound algorithm, 
+similarly to how a program might solve an ordinary sudoku puzzle. The 
+idea is to make guesses for each space one at a time until we either 
+find a solution or realize we have made the puzzle impossible to 
+complete. When we realize we can't complete the puzzle, we back up to 
+the most recent step that still has options available, and try something 
+else. Note that the runtime of such an algorithm is dependent on how 
+early in our search we can recognize impossible puzzles. Hence, we want 
+to backtrack as soon as we are able to identify an impossible puzzle.
